@@ -1,0 +1,6 @@
+name: task01
+build_projects_mapping:
+  java: jsrc/main/java
+lambdas:
+  Mazurkevych_Lambda:
+    runtime: java
