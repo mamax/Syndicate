@@ -24,7 +24,7 @@
     },
     "resource_type": "iam_policy"
   },
-  "Mazurkevych_Lambda-role": {
+  "hello_world-role": {
     "predefined_policies": [],
     "principal_service": "lambda",
     "custom_policies": [
@@ -34,5 +34,20 @@
     "allowed_accounts": [
       "${account_id}"
     ]
+  },
+  "my_table": {
+    "resource_type": "dynamodb_table",
+    "hash_key_name": "age",
+    "hash_key_type": "N",
+    "read_capacity": 1,
+    "write_capacity": 1,
+    "global_indexes": [
+      {
+        "name": "index",
+        "index_key_name": "time",
+        "index_key_type": "N"
+      }
+    ],
+    "autoscaling": []
   }
 }
